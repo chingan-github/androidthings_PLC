@@ -145,6 +145,7 @@ public class MainActivity extends Activity {
         Log.i(TAG, "Serial data received: " + data);  //接收後記錄資料
         //Send_Out = "1234567890" + "\u0003";
         Send_Out = Msg_Word_Rd_Cmd+ '\n'+'\r';
+        //this is a
         serialDevice.write(Send_Out.getBytes());
 
         //serialDevice.write("Android Things\n".getBytes()); // Async-like operation now! :)  //這邊是寫入 Serial 範例
